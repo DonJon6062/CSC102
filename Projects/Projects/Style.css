@@ -1,0 +1,26 @@
+/*bg & text color selector*/ 
+
+body{
+    background-color: dimgrey;
+    color:goldenrod;
+}
+/*affects all within the page*/
+nav{
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;  
+}
+/*shows what is at the bottom of the page*/
+footer{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+/*chages picture thang*/
+#SilliestManAlive{
+    margin-right: 300px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="Game.js"></script>
+      <!--How to link to CSS file-->
+<link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./Index.html">
+            Index</a><br>
+        <a href="./Boards.html">
+            Boards</a><br>
+        <a href="./Form Entry.html">
+            Form Entry</a><br>
+    </nav>
+    <h1>
+        Dice game time!
+    </h1>
+
+    <button onclick="startGame();">Start Craps!</button>
+    <button onclick="smile()">Say Cheese!</button>
+<!--Win/lose/tie screen-->
+    <div id="Crapsresults">Round Results</div>
+<!--First dice roll-->
+    <div id="Dice1Res">First Dice Result</div>
+<!--Second Dice Roll-->
+    <div id="Dice2Res">Second Dice Result</div>
+<!--Total-->
+    <div id="sumRes">Final Sum</div>
+</body>
+</html>

@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Programming Objectives</title>
+    <title>Form Entry</title>
     <!--How to link to CSS file-->
+<script src="Submit.js"></script>
 <link rel="stylesheet" href="Style.css">
 </head>
 
@@ -13,7 +14,7 @@
     <header>
         <!--A good Title-->
     <h1>
-        Program Objectives for Game Programming.
+       Form Entry
     </h1>
     </header>
     <h2>
@@ -22,8 +23,8 @@
                 Index</a><br>
             <a href="./Game.html">
                 Game</a><br>
-            <a href="./Form Entry.html">
-                Form Entry</a><br>
+            <a href="./Boards.html">
+                Boards</a><br>
         </nav>
     </h2>
         <!--I seperated each with p so that it would be spaced, it was a block of text.-->
@@ -65,18 +66,17 @@ techniques. This degree emphasizes C++ programming, C# programming, scripting, d
 artificial intelligence, networking and the use of industry-standard middleware, game engines, and APIs. Students in the
 Game Programming major will also develop a critical approach to the study of gameplay, interaction and design.
 </h3> 
-    <!--Let's add a visual aid..-->
-<p>
-    <img id = "Happiest College Student Alive" src = "Happy.jpg" alt = "ThumbsUpMan">
-</p>
-    <!--I do genuinely love this, but this image was too funny not to use.-->
-<p>
-    "I genuinely love programming! I am so happy to be able to create!"
-</p>
-    <!--See? His parents even named him what he is the pinnacle of!-->
-<p>
-    -Very Happy College Student
-</p>
+<form id = "Test Form">
+    <form style="justify-self: left;">
+    <label for="fname">First Name:</label>
+    <input type = "text" name = "fname" id = "fname"><br><br>
+    <label for="lname">Last Name:</label>
+    <input type = "text" name = "lname" id = "lname"><br><br>
+    <label for="zip">Zip Code:</label>
+    <input type = "text" name = "zip" id = "zip"><br><br>
+
+    <button type="submit"> Submit </button><br><br>
+</form>
 <footer>
     Don Jones<br>
     University of Advancing Technology<br>
