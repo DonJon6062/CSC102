@@ -2,7 +2,7 @@
 
 body{
     background-color: dimgrey;
-  color:goldenrod;
+    color:goldenrod;
 }
 /*affects all within the page*/
 nav{
@@ -15,7 +15,6 @@ nav{
 /*shows what is at the bottom of the page*/
 footer{
     text-align: center;
-    margin-right: 200px;
 }
 
 header{
@@ -23,5 +22,5 @@ header{
 }
 /*chages picture thang*/
 #SilliestManAlive{
-    margin-right: 200px;
+    margin-right: 300px;
 }

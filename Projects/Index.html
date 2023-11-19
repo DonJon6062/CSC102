@@ -1,3 +1,4 @@
+<!--Don Jones!-->
 <!--9.15.23; DJ Crazy Times inspires me-->
 <!--..also the previous one was saved to the class computer.-->
 <!DOCTYPE html>
@@ -6,25 +7,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everybody MOOOVEMENT!</title>
+    <!--Links JS File-->
+<script src="Buttons.js"></script>
     <!--How to link to CSS file-->
 <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
     <header>
-    <h1>Listen to his original tracks! They're good!</h1>
+    <h1>
+        Listen to his original tracks! They're good!
+    </h1>
     </header>
     <h2>
         <nav>
-            <a href="./Boards.html">Boards</a><br>
-            <a href="./Game.html">Game</a><br>
+            <a href="./Boards.html">
+                Boards</a><br>
+            <a href="./Game.html">
+                Game</a><br>
+            <a href="./Form Entry.html">
+                Form Entry</a><br>
         </nav>
     </h2>
-    <p>
+<center>
+    <p id = "Silliest Man Alive" >
         <img id = "Silliest Man Alive" src = "TheStrangestMan.JPG" alt = "TheStrangestMan">
     </p>
+<!--plays audio on the web page on click-->
+    <audio id = "BGM" src="Crickets.wav"></audio>
+
+<input type="button" value="Play and Pause Buttons" onclick="AddImageButtons();">
+
     <p>
-        He's very good at singing and very silly.
+        He's very good at singing and very silly. 
     </p>
     <footer>
     Don Jones<br>
@@ -33,5 +48,6 @@
     Tempe, AZ 85283<br>
     [I reccomend listening to "Hardware Store"]<br>
     </footer>
+</center>
 </body>
 </html>

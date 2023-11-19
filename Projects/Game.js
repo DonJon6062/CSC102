@@ -22,16 +22,16 @@ function startGame(){
     outputRes("sumRes", "The total is:" + sum);
 
     //win/lose/tie var
-    if (sum == 7 || sum == 11){
+    if (sum == 7 || sum == 11) {
         outputRes("sumRes", "Loser!!!");
     }
     //if dice are the same and even
-    else if (dice1 == dice2 && dice2 % 2 == 0){
+    else if (dice1 == dice2 && dice2 % 2 == 0){ 
         outputRes("sumRes", "How lucky! You win!");
     }
     //if neither occurs
     else {
-        outputRes("sumRes", "You Pushed");
+        outputRes("sumRes", "You Pushed!");
     }
 }
 

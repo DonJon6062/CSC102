@@ -8,16 +8,6 @@
 
 </head>
 <body>
-    <script>
-        //Variable for favfood
-        var favFoodType = "Honeycrisp Apple";
-        //Function code
-        function displayFavFood(){
-            alert(favFoodType);
 
-        }
-        //Calls function
-        displayFavFood(favFoodType);
-    </script>
 </body>
 </html>
