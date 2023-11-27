@@ -35,14 +35,19 @@ function startGame(){
     }
 }
 
+//play a little jingle
 function smile() {
-    //play a little jingle
+    //Thx NCS for the royalty free songs; list of their info
     let songInfo = ["Song: Tokyo Machine - SLASH [NCS10 Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/SLASH Watch: http://youtu.be/cGkv5RcPRuo", "Song: Jim Yosef - Samurai [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream:  Watch: http://youtu.be/", "Song: Wiguez & EH!DE - The Path (Ft. Agassi) [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/ThePath Watch: http://youtu.be/"];
+    //Songs and artists used
     let gameSongs = ["Tokyo Machine - SLASH [NCS Release].mp3", "Jim Yosef - Samurai [NCS Release].mp3", "Wiguez & EH!DE - The Path (Ft. Agassi) [NCS Release].mp3"];
+    //accesses the html
     let songElement = document.getElementById("VGM");
+    //loops song when the button is clicked; plays one at randon
     songElement.loop = true
     songElement.src = gameSongs[Math.floor(Math.random() * gameSongs.length)];
     songElement.play();
+    //prints the artist and info for the first song in the array
     console.log (songInfo[0]);
     console.log (gameSongs[0]);
 }
