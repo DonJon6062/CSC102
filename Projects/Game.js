@@ -35,6 +35,17 @@ function startGame(){
     }
 }
 
+function smile() {
+    //play a little jingle
+    let songInfo = ["Song: Tokyo Machine - SLASH [NCS10 Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/SLASH Watch: http://youtu.be/cGkv5RcPRuo", "Song: Jim Yosef - Samurai [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream:  Watch: http://youtu.be/", "Song: Wiguez & EH!DE - The Path (Ft. Agassi) [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/ThePath Watch: http://youtu.be/"];
+    let gameSongs = ["Tokyo Machine - SLASH [NCS Release].mp3", "Jim Yosef - Samurai [NCS Release].mp3", "Wiguez & EH!DE - The Path (Ft. Agassi) [NCS Release].mp3"];
+    let songElement = document.getElementById("VGM");
+    songElement.loop = true
+    songElement.src = gameSongs[Math.floor(Math.random() * gameSongs.length)];
+    songElement.play();
+    console.log (songInfo[0]);
+    console.log (gameSongs[0]);
+}
 //Craps results
 function outputRes(htmlElement, theText){
     //using html element shows results

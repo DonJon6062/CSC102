@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
-    <script src="Game.js"></script>
+        <!--Links JS file-->
+        <script src="Game.js"></script>
       <!--How to link to CSS file-->
-<link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
@@ -22,8 +23,11 @@
         Dice game time!
     </h1>
 
+    <!--Music Time-->
+    <audio id = "VGM" src="Tokyo Machine - SLASH [NCS Release].mp3"></audio>
+
     <button onclick="startGame();">Start Craps!</button>
-    <button onclick="smile()">Say Cheese!</button>
+    <button onclick="smile()">Some Tunes</button>
 <!--Win/lose/tie screen-->
     <div id="Crapsresults">Round Results</div>
 <!--First dice roll-->
@@ -33,4 +37,6 @@
 <!--Total-->
     <div id="sumRes">Final Sum</div>
 </body>
+<!--plays audio on the web page on click-->
+<audio id = "BGM" src="Crickets.wav"></audio>
 </html>
