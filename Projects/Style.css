@@ -1,7 +1,7 @@
 /*bg & text color selector*/ 
 
 body{
-    background-color: dimgrey;
+    background-color: black;
     color:goldenrod;
 }
 /*affects all within the page*/
@@ -20,7 +20,31 @@ footer{
 header{
     text-align: center;
 }
+
+/*gives table borders*/
+table, th, td {
+    font-family: sans-serif;
+    border: 5px double black;
+    margin-right: 600px;
+    margin-left: auto;
+    text-align: center;
+    background-color: grey;
+}
+
 /*chages picture thang*/
 #SilliestManAlive{
     margin-right: 300px;
+    animation-duration: 0s;
+    animation-name: shmoove;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shmoove {
+    from{
+        margin-right: 300px;
+    }
+    to {
+        margin-left: 600px;
+    }
 }
