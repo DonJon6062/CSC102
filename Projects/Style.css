@@ -1,7 +1,7 @@
 /*bg & text color selector*/ 
 
 body{
-    background-color: black;
+    background-color: dimgrey;
     color:goldenrod;
 }
 /*affects all within the page*/
@@ -10,7 +10,8 @@ nav{
     width: 200px;
     float: left;
     padding: 5px;
-    line-height: 30px;  
+    line-height: 30px; 
+    color: firebrick; 
 }
 /*shows what is at the bottom of the page*/
 footer{

@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindrome Checker</title>
-            <!--Links JS file-->
-            <script src="Sound.js"></script> 
-            <script src="Palindrome.js"></script> 
+  <title>Palindrome Checker</title>
+          <!--Links JS File-->
+<script src="Sound.js"></script>
+<script src = Palindrome.js></script>
+<!--How to link to CSS file-->
+<link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <form id = "Is It A Palindrome?">
-        <form style="justify-self: left;">
-        <label for="Enter Word: ">Word:</label>
-        <input type = "text" name = "Enter Word: " id = "Enter Word: "><br><br>
-    
-        <button type="submit"> Submit </button><br><br>
+  <header>
+    <h1>
+      Is it a Palindrome?
+    </h1>
+  </header>
+  <nav>
+    <a href="./Boards.html">
+        Boards</a><br>
+    <a href="./Form Entry.html">
+        Form Entry</a><br>
+    <a href="./Game.html">
+        Game</a><br>   
+    <a href="./Index.html">
+        Index</a><br>
+    <a href="./Landing Page.html">
+        Landing Page</a><br>
+    <a href="./Table.html">
+        Table</a><br>
+  </nav>
 
-    <!--plays audio on the web page on click-->
-    <audio id = "BGM" src="Crickets.wav"></audio>
+  <!--Outlines ids and names for the form-->
+  <form id="palindromeChecker">
+    <label for="theWord">Enter a word:</label>
+    <input type="text" id="theWord" name="theWord">
+    <button type="submit">See if it is a palindrome!</button>
+  </form>
+
+  <div id="result"></div>
 </body>
 </html>

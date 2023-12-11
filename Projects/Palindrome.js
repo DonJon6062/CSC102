@@ -1,19 +1,22 @@
-function revWord() {
-    let word = document.getElementById("Enter Word: ");
-    console.log(word);
-    let reversedWord = "";
-  
-    for (let i = word.length - 1; i >= 0; i--) {
-      reversedWord += word[i];
-    }
-  
-  console.log("The word in reverse is:", reversedWord);
-  
+function reverseTheWord() {
+  event.preventDefault();
+  //get input and remove spaces
+  let word = document.getElementById("theWord").value.toLowerCase().replace(/\s/g, ''); 
+  let palindrome = "";
+
+  for (let i = word.length - 1; i >= 0; i--) {
+    palindrome += word[i];
   }
 
-window.addEventListener("DOMContentLoaded" , (event) => {
-    const form = document.getElementById("Is It A Palindrome?"); 
-    if(form) {
-        form.addEventListener("submit", revWord);
-    }
+  let message = document.getElementById("result");
+  if (word === palindrome) {
+    alert ("'" + word + "' is a palindrome!")
+  } else {
+    alert ("'" + word + "' is not a palindrome.")
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("palindromeChecker");
+  form.addEventListener("submit", reverseTheWord);
 });
